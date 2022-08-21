@@ -1,0 +1,68 @@
+2022-05-23 0:16:29 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: if (is_file($file)) {
+LINE: 13
+----------------------------------------------------------------
+MOD: Poptin
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 26
+----------------------------------------------------------------
+MOD: Smartarget Reviews
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($this->user->hasPermission('access', 'setting/setting')) {
+LINE: 394
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 60
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: <div class="rating">
+LINE: 291
+LINE: 326
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 25
+
+FILE: catalog/controller/product/product.php
+CODE: $data['heading_title'] = $product_info['name'];
+LINE: 250
+
+FILE: admin/controller/setting/setting.php
+CODE: $this->load->model('tool/image');
+LINE: 274
+
+FILE: admin/view/template/setting/setting.twig
+CODE: <li><a href="#tab-server" data-toggle="tab">{{ tab_server }}</a></li>
+LINE: 41
+CODE: <div class="tab-content">
+LINE: 52
+----------------------------------------------------------------
